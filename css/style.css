@@ -1,0 +1,148 @@
+* {
+	color: white;
+}
+
+body {
+	background-color: #303030;
+}
+
+header > div:first-child {
+	background-image: url("../images/hello.jpg");
+	background-size: cover;
+}
+
+#res-log {
+	width: 100%;
+}
+
+#res-log button:first-child {
+	width: 25%;
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+}
+
+#res-log button:last-child {
+	width: 25%;
+	display: inline-block;
+	float: right;
+	padding: 5px 15px 5px 15px;
+}
+
+#logo {
+	clear: right;
+}
+
+#logo img {
+	width: 20%;
+	display: block;
+	margin: 3% auto;
+}
+
+#logo span	{
+	display: none;
+}
+
+#search {
+	margin-bottom: 3%;
+}
+
+#search > div.input-group {
+	width: 70%;
+	margin: auto;
+}
+
+main div h1 {
+	font-size: 150%;
+	text-align: center;
+}
+
+.container-fluid {
+	text-align: center;
+}
+
+.container-fluid .row img {
+	width: 100%;
+	height: 40vh;
+}
+
+.container-fluid .row div a:nth-child(2) {
+	font-style: italic;
+	font-weight: bold;
+	color: white;
+}
+
+.container-fluid .row div {
+	margin-bottom: 3%;
+}
+
+nav {
+	font-weight: bold;
+}
+
+#carouselExampleControls {
+	display: none;
+}
+
+footer .mb-5 {
+	display: grid;
+	justify-content: space-between;
+	grid-template-rows: 100%;
+	grid-template-columns: auto auto auto;
+}
+
+footer {
+	background-color: grey;
+	min-width: 200px;
+}
+
+hr {
+	background-color: yellow;
+	width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+	#res-log {
+		width: 30%;
+		display: flex;
+		float: right;
+		padding: 1%;
+		justify-content: right;
+	}
+
+	#res-log button:first-child {
+		margin-right: 20px;
+	}
+
+	#logo {
+		box-sizing: border-box;
+		position: relative;
+	}
+
+	#logo img {
+		width: 15%;
+	}
+
+	#logo span {
+		display: inline-block;
+		text-transform: uppercase;
+		position: absolute;
+		top: 40%;
+		left: 8%;
+		font-size: 2vw;
+	}
+
+	#search > div.input-group {
+		width: 30%;
+		margin-right: 1%;
+	}
+
+	#carouselExampleControls {
+		display: block;
+		width: 80%;
+		margin: 1% auto;
+	}
+
+	footer .mb-5 {
+		grid-template-columns: auto auto auto auto auto auto;
+	}
+}
